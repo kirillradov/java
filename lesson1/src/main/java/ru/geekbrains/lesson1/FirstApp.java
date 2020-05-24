@@ -23,7 +23,7 @@ public class FirstApp {
             System.out.println(summ(10,2,2,2));
         }
         //  Второе задание
-    public static int summ(int a1, int b1, int c1, int d1) {
+        public static int summ(int a1, int b1, int c1, int d1) {
         return a1*(b1 +(c1 / d1));
     }
 
