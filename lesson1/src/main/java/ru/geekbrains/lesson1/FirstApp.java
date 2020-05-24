@@ -28,12 +28,12 @@ public class FirstApp {
             isLeapYear(2024);
         }
     //Третье задание
-    public static int summ(int a1, int b1, int c1, int d1) {
-        return a1*(b1 +(c1 / d1));
+    public static int summ(int a, int b, int c, int d) {
+        return a*(b +(c / d));
     }
     //Четвертое задание
-    public static boolean from10To20(int a2, int b2) {
-        if ((a2 + b2) >= 10 && (a2 + b2) <= 20) {
+    public static boolean from10To20(int a, int b) {
+        if ((a + b) >= 10 && (a + b) <= 20) {
             return true;
         } else return false;
     }
