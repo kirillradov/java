@@ -26,6 +26,5 @@ public class FirstApp {
         public static int summ(int a1, int b1, int c1, int d1) {
         return a1*(b1 +(c1 / d1));
     }
-
 }
 
