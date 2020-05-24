@@ -1,6 +1,6 @@
 package ru.geekbrains.lesson1;
 
-    public class FirstApp {
+public class FirstApp {
         public static void main(String[] args) {
             System.out.println("Hello, World!");
 //  Первое задание
@@ -20,9 +20,12 @@ package ru.geekbrains.lesson1;
             System.out.println(f);
             System.out.println(g);
             System.out.println(h);
-//  Второе задание
-
-
+            System.out.println(summ(10,2,2,2));
         }
+        //  Второе задание
+    public static int summ(int a1, int b1, int c1, int d1) {
+        return a1*(b1 +(c1 / d1));
     }
+
+}
 
