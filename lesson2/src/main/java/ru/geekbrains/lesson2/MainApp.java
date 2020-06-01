@@ -30,9 +30,9 @@ public class MainApp {
         //Четвертое задание
         System.out.println();
         fillArr();
-        int[] arr4 = {1,2,3,4,5,6,7,8,4,2,45,0,-5,87};
+        int[] arr4 = {0,1,1,1,1,1,5,1};
         minMax(arr4);
-
+        System.out.println(arrayCompare(arr4));
     }
     public static void fillArr() {
         int[][] table = new int[10][10];
@@ -57,6 +57,29 @@ public class MainApp {
             }
         }
         System.out.println("Минимальный: " + min + ", максимальный: " + max);
+    }
+
+    //задание 6
+    public static boolean arrayCompare(int[] arr) {
+        int left = 0;
+        int right = 0;
+        for(int i = 0; i < arr.length-1;) {
+            left = left + arr[i];
+            i++;
+            right = arraySumm(arr, i);
+            if(left == right) {
+                return true;
+            }
+        } return false;
+    }
+
+    public static int arraySumm(int[] arr, int step) {
+        int summ = 0;
+        for(int i = step; i < arr.length; i++) {
+            summ = summ + arr[i];
+        }
+        System.out.println(summ);
+        return summ;
     }
 
     public static void printArr(int[][] arr) {
