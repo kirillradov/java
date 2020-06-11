@@ -28,6 +28,6 @@ public class Main {
 				cats++;
 			}
 		}
-		System.out.println("Животных: " + (cats+dogs) + ". Собак: " + dogs + ". Котов: " + cats);
+		System.out.println("Животных: " + zoo.size() + ". Собак: " + dogs + ". Котов: " + cats);
     }
 }
