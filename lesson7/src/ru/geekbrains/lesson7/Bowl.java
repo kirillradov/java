@@ -8,12 +8,12 @@ public class Bowl {
         this.capacity = capacity;
     }
 
-    public void getCapacity() {
-        System.out.println(this.capacity);
+    public int getCapacity() {
+        return this.capacity;
     }
 
-    public void setFoodAmount(int food) {
-        if(food > 0 && (food + this.foodAmount) <= capacity) {
+    public void increaseFood(int food) {
+        if (food > 0 && (food + this.foodAmount) <= capacity) {
             this.foodAmount += food;
             System.out.println("Миска наполнена успешно. Еды: " + foodAmount);
         } else {
@@ -21,16 +21,16 @@ public class Bowl {
         }
     }
 
-    public void getFoodAmount() {
-        System.out.println(this.foodAmount);
+    public int getFoodAmount() {
+        return this.foodAmount;
     }
 
-    public void decreaseFood(int food) {
-        if(food > 0 && food <= this.foodAmount && (this.foodAmount - food) >= 0) {
+    public boolean decreaseFood(int food) {
+        if (food > 0 && food <= this.foodAmount && (this.foodAmount - food) >= 0) {
             this.foodAmount -= food;
-            System.out.println("Котик покушал. Еды осталось: " +foodAmount);
+            return true;
         } else {
-            System.out.println("Не удалось покушать. (");
+            return false;
         }
 
     }
