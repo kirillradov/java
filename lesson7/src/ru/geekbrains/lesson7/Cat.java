@@ -2,7 +2,7 @@ package ru.geekbrains.lesson7;
 
 public class Cat {
     private boolean satiety = false;
-    private int appetite = 10;
+    private int appetite;
     private String name;
 
     public Cat(String name, int appetite) {
